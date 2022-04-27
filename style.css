@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Red+Hat+Display:wght@500;700;900&display=swap');
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("pattern-background-desktop.svg");
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.secondary{
+    
+    max-width: 400px;
+    background-color: hsl(225, 100%, 94%);
+    border-radius: 20px;
+}
+
+.cover-image img{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+.heading{
+    text-align: center;
+    margin: 25px;
+    
+}
+.heading h1{
+    margin-top: 10px ;
+    font-size: 22px;
+    font-weight: 900;
+}
+
+.heading p{
+    margin-top: 10px;
+    font-size: 16px;
+    padding: 0 20px;
+    color: gray;
+}
+
+.third-container{
+    background-color: white;
+    margin: 0 30px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.third-container .music{
+    display: flex;
+    gap: 20px;
+}
+
+.text h2{
+    font-size: 16px;
+    font-weight: 900;
+}
+.music .text{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    justify-content: center;
+}
+.text p{
+    color: gray;
+}
+
+.change-btn a{
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.change-btn a:hover{
+    color: hsl(240, 100%, 75%);
+    text-decoration: none;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    margin: 20px;
+}
+
+.button1 button{
+    background-color: hsl(245, 75%, 52%);
+    border: none;
+    padding: 13px 95px;
+    font-size: 16px;
+    font-family:  'Red Hat Display', sans-serif;
+    border-radius: 9px;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 8px 8px -4px gray ;
+}
+
+.button2 button{
+    padding: 13px 117px;
+    font-size: 16px;
+    font-family:  'Red Hat Display', sans-serif;
+    border-radius: 9px;
+    color: gray;
+    font-weight: 900;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+
+.button1 button:hover{
+    background-color:  hsl(240, 100%, 75%);
+}
+
+.button2 button:hover{
+    color: black;
+}
+
+
+
+@media only screen and (max-width : 1440px){
+    body{
+        background-image: url("pattern-background-desktop.svg");
+        background-repeat: no-repeat;
+    }
+
+}
+@media only screen and (max-width : 375px){
+    body{
+        background-image: url("pattern-background-mobile.svg");
+        background-repeat: no-repeat;
+    }
+}
+
+
